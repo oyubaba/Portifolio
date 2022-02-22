@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sobre-mim-content, .apresentacao, .skills, .hobbies {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+header h1 {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.foto-perfil {
+    border-radius: 200px;
+    float: right;
+    margin-right: 3em;
+    margin-top: -3em;
+}
+
+.apresentacao {
+    height: 300px;
+    padding: 7rem 5rem 3em; 
+}
+
+.apresentacao h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.apresentacao p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.apresentacao ul {
+    font-weight: 500;
+    display: flex;
+}
+
+.apresentacao li {
+    margin-right: 5em;
+    padding: 10px;
+}
+
+.apresentacao li:after {
+    content: url(imagens/Vectorseta.png);
+    margin-left: 10px;
+}
+
+.apresentacao-texto {
+    width: 900px;
+}
+
+.sobre-mim {
+    padding: 5rem 5rem;
+    width: 100%;
+    height: 300px;
+    background-color: #EAF2FD;
+}
+
+.rubrica {
+    width: 10%;
+}
+
+.sobre-mim h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.sobre-mim p {
+    margin: 2em 0;
+    font-size: 1em;
+    max-width: 700px;
+    text-align: justify;
+}
+
+.skills {
+    padding: 5em 0;
+}
+
+.hobbies {
+    padding: 0 0 6em;
+}
+
+.skills h2, .hobbies h2, .formacao h2, .projetos h2 {
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 60px; 
+}
+.skills-container, .hobbies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-box, .hobbies-box {
+    flex-direction: column;
+    background-color: white;
+    min-width: 250px;
+    height: 200px;
+    margin: 16px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.skills-box:hover, .hobbies-box:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 1px 1px 5px rgba(172, 172, 172, 0.473);
+}
+
+.skills-box p, .hobbies-box p{
+    font-weight: 700;
+    margin: 20px 0 0;
+}
+
+.skills-box img {
+    width: 100px;
+}
+
+.formacao {
+    background-color: #EAF2FD;
+    padding: 5em 0;
+}
+
+.formacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formacao-box {
+    background-color: white;
+    width: 360px;
+    height: 220px;
+    text-align: center;
+    padding: 3.2em 0 0;
+    margin-right: 1em;
+}
+
+.unisul {
+    padding: 2.5em;
+    width: 70%;
+}
+
+.legenda {
+    font-weight: 700;
+    margin: 1em 0 0.2em;
+}
+
+.formacao, .sobre-mim {
+    box-shadow: 1px 1px 7px #dbe3ee;
+}
+
+.formacao-box, .skills-box, .hobbies-box {
+    box-shadow: 1px 1px 7px rgb(211, 211, 211);
+}
+
+.projetos h2 {
+    padding: 3em 0 3em;
+}
+
+.projeto-barbearia, .projeto-codificador, .projeto-android {
+    display: flex;
+    justify-content: center;
+}
+
+.projeto-barbearia h3, .projeto-codificador h3, .contato-content h3, .projeto-android h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+}
+
+.barbearia-content, .codificador-content, .android-content{
+    padding-left: 2em;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barbearia-content p, .codificador-content p, .android-content p{
+    width: 450px;
+    text-align: justify;
+}
+
+.botao-repositorio, .botao-demo {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+}
+
+.botao-repositorio {
+    color: #2A7AE4;
+    background-color: transparent;
+    border: 1px solid #2A7AE4;
+    margin: 10px 10px 0 0;
+}
+
+.botao-demo {
+    background-color: #2A7AE4;
+    color: #dbe3ee;
+    border: none;
+}
+
+.botao-demo:hover, .botao-repositorio:hover, .botao-enviar:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.projeto-codificador {
+    flex-direction: row-reverse;
+    margin-top: 6em;
+}
+
+.codificador-content p {
+    padding-right: 30px;
+ }
+
+.projeto-android {
+    margin-top: 6em;
+}
+
+.contato {
+    width: 100%;
+    margin-top: 4em;
+    padding: 4em 0;
+    background-color: #dbe3ee;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.contato-form input {
+    display: block;
+    margin: 20px 0;
+    height: 50px;
+    width: 500px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0.2px 2px #000;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+.botao-enviar {
+    border: none;
+    background-color: #2A7AE4;
+    color: white;
+    height: 50px;
+    width: 170px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    header a:not(.email) {
+        display: none;
+    }
+
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0 150px 0;
+        max-width: 800px;
+        margin: 0;
+    }
+
+    .foto-perfil {
+        margin: auto;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+
+    .contato img {
+        display: none;
+    }
+    .projetos {
+        text-align: center;
+    }
+
+    .barbearia-content, .android-content, .codificador-content {
+        margin: auto;
+    }
+
+    .projeto-android, .projeto-barbearia, .projeto-codificador {
+        display: flex;
+        flex-direction: column;
+    }
+}
